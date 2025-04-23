@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilih Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      text-align: center;
+    }
+    h1 {
+      color: #00ffff;
+    }
+    .login-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      margin: 15px auto;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      gap: 10px;
+    }
+    .google { background-color: #db4437; }
+    .facebook { background-color: #1877f2; }
+    .tiktok {
+      background: linear-gradient(45deg, #000000, #ffffff);
+      color: black;
+    }
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .login-button i { font-size: 20px; }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login ke Sistem</h1>
+    <button class="login-button google" onclick="window.location.href='google-login.html'">
+      <i class="fab fa-google"></i> Login dengan Google
+    </button>
+    <button class="login-button facebook" onclick="window.location.href='facebook-login.html'">
+      <i class="fab fa-facebook-f"></i> Login dengan Facebook
+    </button>
+    <button class="login-button tiktok" onclick="window.location.href='tiktok-login.html'">
+      <i class="fab fa-tiktok"></i> Login dengan TikTok
+    </button>
+    <button class="login-button instagram" onclick="window.location.href='instagram-login.html'">
+      <i class="fab fa-instagram"></i> Login dengan Instagram
+    </button>
+  </div>
+</body>
+</html>
